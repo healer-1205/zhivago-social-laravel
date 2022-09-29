@@ -23,10 +23,8 @@
     <div class="container register">
         <div class="row">
             <div class="col-md-3 register-left">
-                <h3>Welcome</h3>
-                <p>You are 30 seconds away from earning your own money!</p>
             </div>
-            <div class="col-md-9 register-right">
+            <div class="col-md-8 register-right">
                 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -43,7 +41,8 @@
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="row register-form">
-                                <div class="col-md-12">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <input
                                             class="form-control {{ Session::get('email_invalid') ? 'is-invalid' : '' }}"
@@ -63,6 +62,7 @@
                                     </div>
                                     <input type="submit" class="btnRegister" value="Login" />
                                 </div>
+                                <div class="col-md-3"></div>
                             </div>
                         </form>
                     </div>
@@ -79,12 +79,6 @@
                                             autocomplete="name" placeholder="Enter your Name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text"
-                                            class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
-                                            type="text" name="username" :value="old('username')" required autofocus
-                                            autocomplete="username" placeholder="Enter Your Username">
-                                    </div>
-                                    <div class="form-group">
                                         <input type="email"
                                             class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
                                             name="email" :value="old('email')" required autofocus
@@ -97,11 +91,6 @@
                                             class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
                                             type="password" name="password" required autocomplete="new-password"
                                             placeholder="Enter your password">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" name="password_confirmation" required
-                                            autocomplete="new-password" class="form-control"
-                                            placeholder="Repeat password">
                                     </div>
                                     <div class="form-group">
                                         <select class="{{ $errors->has('cardType') ? 'is-invalid' : '' }} form-control"

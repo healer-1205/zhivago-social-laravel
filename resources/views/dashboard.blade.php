@@ -746,8 +746,7 @@
                             <div class="media">
                                 <figure class="media-left">
                                     <p class="image">
-                                        <img src="https://via.placeholder.com/300x300"
-                                            data-demo-src="assets/img/avatars/david.jpg" alt="">
+                                        <img src="" data-demo-src="assets/img/avatars/david.jpg" alt="">
                                     </p>
                                 </figure>
                                 <div class="media-content">
