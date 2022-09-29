@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
     <!------ Include the above in your HEAD tag ---------->
     <style>
+        .body {
+            background: url("../../../assets/img/hot-girl-wallpaper.jpg") no-repeat;
+            background-size: cover;
+        }
+
         .container {
             max-width: 100%;
             min-height: 100vh;
@@ -19,7 +24,7 @@
     </style>
 </head>
 
-<body>
+<body class="body">
     <div class="container register">
         <div class="row">
             <div class="col-md-3 register-left">
