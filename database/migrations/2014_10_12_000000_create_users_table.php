@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('username')->unique();
             $table->string('email')->unique();
-            $table->date('DOB');//date of birth
+            $table->date('DOB')->nullable(); //date of birth
             $table->string('accountType');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -39,5 +39,3 @@ return new class extends Migration
         Schema::dropIfExists('users');
     }
 };
-
-

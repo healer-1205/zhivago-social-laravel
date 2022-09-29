@@ -1,174 +1,132 @@
-@extends('layouts.default')
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <script src="{{ asset('assets/js/jquery3.2.1.min.js') }}"></script>
+    <script src="{{ asset('assets/bootstrap-4.1.3-dist/js/bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap-4.1.3-dist/css/bootstrap.min.css') }}" id="bootstrap-css">
+    <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
+    <!------ Include the above in your HEAD tag ---------->
+    <style>
+        .container {
+            max-width: 100%;
+            min-height: 100vh;
+        }
 
-@section('title')
- {{ config('app.name') }} | login
-@endsection
-{{-- <x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
+        .is-invalid {
+            border: 1px solid red;
+        }
+    </style>
+</head>
 
-        <div class="card-body">
-
-            <x-jet-validation-errors class="mb-3 rounded-0" />
-
-            @if (session('status'))
-                <div class="alert alert-success mb-3 rounded-0" role="alert">
-                    {{ session('status') }}
-                </div>
-            @endif
-
-            <form method="POST" action="{{ route('login') }}">
-                @csrf
-                <div class="mb-3">
-                    <x-jet-label value="{{ __('Email') }}" />
-
-                    <x-jet-input class="{{ $errors->has('email') ? 'is-invalid' : '' }}" type="email"
-                                 name="email" :value="old('email')" required />
-                    <x-jet-input-error for="email"></x-jet-input-error>
-                </div>
-
-                <div class="mb-3">
-                    <x-jet-label value="{{ __('Password') }}" />
-
-                    <x-jet-input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" type="password"
-                                 name="password" required autocomplete="current-password" />
-                    <x-jet-input-error for="password"></x-jet-input-error>
-                </div>
-
-                <div class="mb-3">
-                    <div class="custom-control custom-checkbox">
-                        <x-jet-checkbox id="remember_me" name="remember" />
-                        <label class="custom-control-label" for="remember_me">
-                            {{ __('Remember Me') }}
-                        </label>
-                    </div>
-                </div>
-
-                <div class="mb-0">
-                    <div class="d-flex justify-content-end align-items-baseline">
-                        @if (Route::has('password.request'))
-                            <a class="text-muted me-3" href="{{ route('password.request') }}">
-                                {{ __('Forgot your password?') }}
-                            </a>
-                        @endif
-
-                        <x-jet-button>
-                            {{ __('Log in') }}
-                        </x-jet-button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </x-jet-authentication-card>
-</x-guest-layout>
-
- --}}
-
-
- @section('main')
-
-<!--Left Side (Desktop Only)-->
-            <div class="column is-6 is-hidden-mobile hero-banner">
-                <div class="hero is-fullheight is-login">
-                    <div class="hero-body">
-                        <div class="container">
-                            <div class="left-caption">
-                                <h2>Join an Exciting Social Experience.</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<body>
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <h3>Welcome</h3>
+                <p>You are 30 seconds away from earning your own money!</p>
             </div>
-
-
-             @if (session('status'))
-                <div class="alert alert-success mb-3 rounded-0" role="alert">
-                    {{ session('status') }}
-                </div>
-                 @endif 
-
-                 
-            <!--Right Side-->
-            <div class="column is-6">
-                <div class="hero form-hero is-fullheight">
-                    <!--Logo-->
-                    <div class="logo-wrap">
-                        <div class="wrap-inner">
-                            <img src="assets/img/logo/Zhivago-white.svg" alt="">
-                        </div>
-                    </div>
-             <form method="POST" action="{{ route('login') }}">
-                @csrf
-                
-
-
-                    <!--Login Form-->
-                    <div class="hero-body">
-                        <div class="form-wrapper">
-                            <!--Avatar-->
-                            <div class="avatar">
-                                <div class="badge">
-                                    <i data-feather="check"></i>
+            <div class="col-md-9 register-right">
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Register</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Login</h3>
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
+                            <div class="row register-form">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input
+                                            class="form-control {{ Session::get('email_invalid') ? 'is-invalid' : '' }}"
+                                            type="email" name="email" :value="old('email')" required
+                                            placeholder="melina@example.com" />
+                                        @if (Session::has('email_invalid'))
+                                            <small style="color:red"> {{ Session::get('email_invalid') }}</small>
+                                        @endif
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            class="form-control {{ Session::get('password_invalid') ? ' is-invalid' : '' }}"
+                                            type="password" name="password" required autocomplete="current-password" />
+                                        @if (Session::has('password_invalid'))
+                                            <small style="color:red"> {{ Session::get('password_invalid') }}</small>
+                                        @endif
+                                    </div>
+                                    <input type="submit" class="btnRegister" value="Login" />
                                 </div>
-                                <img src="assets/img/avatars/template.jpg" data-demo-src="assets/img/logo/Zhivago-white.svg" alt="avatar">
                             </div>
-                            <!--Form-->
-                            <div class="login-form">
-                                <div class="field">
-                                    <div class="control">
-                                        <input class="input email-input {{ $errors->has('email') ? 'is-invalid' : '' }}" type="email"
-                                 name="email" :value="old('email')" required placeholder="melina@example.com" />
-                                           @error('password')
-                                                <small style="color:red"> {{ $message }}</small>
-                                            @enderror
-                                        <div class="input-icon">
-                                            <i data-feather="user"></i>
-                                        </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h3 class="register-heading">Register</h3>
+                        <form method="POST" action="{{ route('register') }}">
+                            @csrf
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
+                                            type="text" name="name" :value="old('name')" required autofocus
+                                            autocomplete="name" placeholder="Enter your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
+                                            type="text" name="username" :value="old('username')" required autofocus
+                                            autocomplete="username" placeholder="Enter Your Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email"
+                                            class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
+                                            name="email" :value="old('email')" required autofocus
+                                            autocomplete="email" placeholder="Enter your email address">
                                     </div>
                                 </div>
-                                <div class="field">
-                                    <div class="control">
-                                        <input class="input password-input {{ $errors->has('password') ? ' is-invalid' : '' }}" type="password"
-                                 name="password" required autocomplete="current-password" />
-                                    @error('password')
-                                    <small style="color:red"> {{ $message }}</small>
-                                    @enderror
-                                        <div class="input-icon">
-                                            <i data-feather="lock"></i>
-                                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="password"
+                                            class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
+                                            type="password" name="password" required autocomplete="new-password"
+                                            placeholder="Enter your password">
                                     </div>
-                                </div>
-                                        <div class="mb-3">
-                                            <div class="custom-control custom-checkbox">
-                                                <x-jet-checkbox id="remember_me" name="remember" />
-                                                <label class="custom-control-label" for="remember_me">
-                                                    {{ __('Remember Me') }}
-                                                </label>
-                                            </div>
-                                        </div>
-                                <div class="field">
-                                    <div class="control">
-                                        <button type="submit" class="button is-solid primary-button raised is-rounded is-fullwidth"> Login </button>
-<!--                                         <button class="button is-solid primary-button raised is-rounded is-fullwidth">Login</button>
- -->                                    </div>
-                            <div class="has-text-centered">
-                                <a href="{{ route('register') }}" target="_blank">Don't have an account? Create Account </a>
-                            </div>
-                                </div>
-                            </div>
-                            <div class="section forgot-password">
-                                <div class="has-text-centered">
-                                    <a href="">Forgot password?</a>
+                                    <div class="form-group">
+                                        <input type="password" name="password_confirmation" required
+                                            autocomplete="new-password" class="form-control"
+                                            placeholder="Repeat password">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="{{ $errors->has('cardType') ? 'is-invalid' : '' }} form-control"
+                                            name="accountType" required value='{{ old('cardType') }}'
+                                            :value="old('email')">
+                                            <option value class="hidden" selected disabled>Choose account type</option>
+                                            <option value="talent"> Talent </option>
+                                            <option value="affiliate"> Affiliate </option>
+                                            <option value="vendor"> Vendor </option>
+                                            <option value="customer"> customer </option>
+                                        </select>
+                                        @error('cardType')
+                                            <small class="text-red text-center"> {{ $message }} </small>
+                                        @enderror
+                                    </div>
+                                    <input type="submit" class="btnRegister" value="Register" />
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
                 </div>
             </div>
         </div>
 
-         @endsection
+    </div>
+</body>
+
+</html>
