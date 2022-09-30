@@ -282,8 +282,8 @@
                                                 </div>
                                             </div>
                                             <div class="media-content">
-                                                <h3>Jenna Davis</h3>
-                                                <small>Main account</small>
+                                                <h3>{{ auth()->user()->name }}</h3>
+                                                <small>{{ auth()->user()->accountType }}</small>
                                             </div>
                                             <div class="media-right">
                                                 <i data-feather="check"></i>
@@ -313,17 +313,21 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a class="account-item">
-                                        <div class="media">
-                                            <div class="icon-wrap">
-                                                <i data-feather="power"></i>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                        <a class="account-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            <div class="media">
+                                                <div class="icon-wrap">
+                                                    <i data-feather="power"></i>
+                                                </div>
+                                                @csrf
+                                                <div class="media-content">
+                                                    <h3>Log out</h3>
+                                                    <small>Log out from your account.</small>
+                                                </div>
                                             </div>
-                                            <div class="media-content">
-                                                <h3>Log out</h3>
-                                                <small>Log out from your account.</small>
-                                            </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -1669,7 +1673,7 @@
 
 
                         <!-- POST #1 -->
-                        <div id="feed-post-1" class="card is-post">
+                        {{-- <div id="feed-post-1" class="card is-post">
                             <!-- Main wrap -->
                             <div class="content-wrap">
                                 <!-- Post header -->
@@ -2325,12 +2329,12 @@
                                 <!-- Comments footer -->
                             </div>
                             <!-- /Post #1 Comments -->
-                        </div>
+                        </div> --}}
                         <!-- POST #1 -->
                         <!-- Post 2 -->
                         <!-- /partials/pages/feed/posts/feed-post2.html -->
                         <!-- POST #2 -->
-                        <div class="card is-post">
+                        {{-- <div class="card is-post">
                             <!-- Main wrap -->
                             <div class="content-wrap">
                                 <!-- Post header -->
@@ -2668,12 +2672,12 @@
                                 <!-- /Comments footer -->
                             </div>
                             <!-- /Post #2 comments -->
-                        </div>
+                        </div> --}}
                         <!-- /POST #2 -->
                         <!-- Post 3 -->
                         <!-- /partials/pages/feed/posts/feed-post3.html -->
                         <!-- POST #3 -->
-                        <div class="card is-post">
+                        {{-- <div class="card is-post">
                             <!-- Main wrap -->
                             <div class="content-wrap">
                                 <!-- Header -->
@@ -3188,12 +3192,12 @@
                                 <!-- /Comments footer -->
                             </div>
                             <!-- /Post #3 Comments -->
-                        </div>
+                        </div> --}}
                         <!-- /POST #3 -->
                         <!-- Post 4 -->
                         <!-- /partials/pages/feed/posts/feed-post4.html -->
                         <!-- POST #4 -->
-                        <div class="card is-post">
+                        {{-- <div class="card is-post">
                             <!-- Main wrap -->
                             <div class="content-wrap">
                                 <!-- Header -->
@@ -4000,12 +4004,12 @@
                                 <!-- /Comments footer -->
                             </div>
                             <!-- /Post #4 comments -->
-                        </div>
+                        </div> --}}
                         <!-- /POST #4 -->
                         <!-- Post 5 -->
                         <!-- /partials/pages/feed/posts/feed-post5.html -->
                         <!-- POST #5 -->
-                        <div class="card is-post">
+                        {{-- <div class="card is-post">
                             <!-- Main wrap -->
                             <div class="content-wrap">
                                 <!-- Header -->
@@ -4344,7 +4348,7 @@
                                 <!-- /Comments footer -->
                             </div>
                             <!-- /Post #5 comments -->
-                        </div>
+                        </div> --}}
                         <!-- /POST #5 -->
                         <!-- Post 6 -->
                         <!-- /partials/pages/feed/posts/feed-post6.html -->
@@ -4363,7 +4367,7 @@
                                         </div>
                                         <div class="user-info">
                                             <a href="#">Alexa Nidle</a>
-                                            <span class="time">July 28 2022, 11:14am</span>
+                                            <span class="time">Sep 27 2022, 11:14am</span>
                                         </div>
                                     </div>
                                     <!-- /partials/pages/feed/dropdowns/feed-post-dropdown.html -->
@@ -4756,7 +4760,7 @@
                             </div>
                             <div class="card-body no-padding">
                                 <!-- Suggested friend -->
-                                <div class="add-friend-block transition-block">
+                                {{-- <div class="add-friend-block transition-block">
                                     <img src="https://image.made-in-china.com/155f0j00gBbiCoazZsuO/SJ-BFD1032-Wholesale-Hot-Girls-2022-Custom-Sexy-Bikini-Women-Bathing-Suits-Cover-UPS-Beachwear-Two-Pieces-Swimwear.jpg"
                                         data-demo-src="assets/img/avatars/nelly.png" data-user-popover="9"
                                         alt="">
@@ -4767,64 +4771,12 @@
                                     <div class="add-friend add-transition">
                                         <i data-feather="user-plus"></i>
                                     </div>
-                                </div>
-                                <!-- Suggested friend -->
-                                <div class="add-friend-block transition-block">
-                                    <img src="https://gobrides.net/wp-content/uploads/2022/03/eve__sk02_275101745_269132322068616_7866924228008678856_n-edited-400x400.jpeg"
-                                        data-demo-src="assets/img/avatars/lana.jpeg" data-user-popover="10"
-                                        alt="">
-                                    <div class="page-meta">
-                                        <span>Lana Henrikssen</span>
-                                        <span>Helsinki</span>
-                                    </div>
-                                    <div class="add-friend add-transition">
-                                        <i data-feather="user-plus"></i>
-                                    </div>
-                                </div>
-                                <!-- Suggested friend -->
-                                <div class="add-friend-block transition-block">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ysR7CpwQICwhDo7LzTb5VY2IqrUeuUUDLw&usqp=CAU"
-                                        data-demo-src="assets/img/avatars/gaelle.jpeg" data-user-popover="11"
-                                        alt="">
-                                    <div class="page-meta">
-                                        <span>Gaelle Morris</span>
-                                        <span>Lyon</span>
-                                    </div>
-                                    <div class="add-friend add-transition">
-                                        <i data-feather="user-plus"></i>
-                                    </div>
-                                </div>
-                                <!-- Suggested friend -->
-                                <div class="add-friend-block transition-block">
-                                    <img src="https://image.made-in-china.com/155f0j00DoPzYURIIacw/Plus-Size-Hot-Girl-Sexy-Bikini-Ladies-Underwear-Set-Woman-Swimwear-Bikini.jpg"
-                                        data-demo-src="assets/img/avatars/mike.jpg" data-user-popover="12"
-                                        alt="">
-                                    <div class="page-meta">
-                                        <span>Mike Lasalle</span>
-                                        <span>Toronto</span>
-                                    </div>
-                                    <div class="add-friend add-transition">
-                                        <i data-feather="user-plus"></i>
-                                    </div>
-                                </div>
-                                <!-- Suggested friend -->
-                                <div class="add-friend-block transition-block">
-                                    <img src="https://www.nairaland.com/attachments/6124162_g_jpegb5568a2e9fbfe67d78600688f9dcea10"
-                                        data-demo-src="assets/img/avatars/rolf.jpg" data-user-popover="13"
-                                        alt="">
-                                    <div class="page-meta">
-                                        <span>Rexa Dolf</span>
-                                        <span>San Francisco</span>
-                                    </div>
-                                    <div class="add-friend add-transition">
-                                        <i data-feather="user-plus"></i>
-                                    </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <!-- New job widget -->
                         <!-- /partials/widgets/new-job-widget.html -->
-                        <div class="card is-new-job-card has-background-image"
+                        {{-- <div class="card is-new-job-card has-background-image"
                             data-background="assets/img/illustrations/cards/job-bg.svg">
                             <div class="card-heading">
                                 <i data-feather="briefcase"></i>
@@ -4881,7 +4833,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <!-- /Right side column -->
                 </div>

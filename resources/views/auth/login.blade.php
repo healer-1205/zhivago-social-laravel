@@ -21,6 +21,19 @@
         .is-invalid {
             border: 1px solid red;
         }
+
+        .register .nav-logos {
+            float: left;
+            margin-top: 3%;
+            margin-left: 5%;
+            width: 28%;
+        }
+
+        .account-radio {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+        }
     </style>
 </head>
 
@@ -30,6 +43,9 @@
             <div class="col-md-3 register-left">
             </div>
             <div class="col-md-8 register-right">
+                <div class="nav-logos" id="logo" role="image-logo">
+                    <img src="/assets/img/logo/zhivago-logo.png" alt="logo" width="150" />
+                </div>
                 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -76,12 +92,13 @@
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="row register-form">
+                                <div class="col-md-3"></div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <input type="text"
                                             class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
                                             type="text" name="name" :value="old('name')" required autofocus
-                                            autocomplete="name" placeholder="Enter your Name">
+                                            autocomplete="name" placeholder="Enter UserName">
                                     </div>
                                     <div class="form-group">
                                         <input type="email"
@@ -89,15 +106,13 @@
                                             name="email" :value="old('email')" required autofocus
                                             autocomplete="email" placeholder="Enter your email address">
                                     </div>
-                                </div>
-                                <div class="col-md-6">
                                     <div class="form-group">
                                         <input type="password"
                                             class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
                                             type="password" name="password" required autocomplete="new-password"
                                             placeholder="Enter your password">
                                     </div>
-                                    <div class="form-group">
+                                    {{-- <div class="form-group">
                                         <select class="{{ $errors->has('cardType') ? 'is-invalid' : '' }} form-control"
                                             name="accountType" required value='{{ old('cardType') }}'
                                             :value="old('email')">
@@ -110,9 +125,40 @@
                                         @error('cardType')
                                             <small class="text-red text-center"> {{ $message }} </small>
                                         @enderror
+                                    </div> --}}
+                                    <div class="form-group" style="display:flex; justify-content:center">
+                                        <div class="form-check account-radio">
+                                            <input class="form-check-input" type="radio" value="Talent"
+                                                id="TalentCheckbox" name="accountType">
+                                            <label class="form-check-label" for="TalentCheckbox">
+                                                Talent
+                                            </label>
+                                        </div>
+                                        <div class="form-check account-radio">
+                                            <input class="form-check-input" type="radio" value="Affiliate"
+                                                id="AffiliateCheckbox" name="accountType">
+                                            <label class="form-check-label" for="AffiliateCheckbox">
+                                                Affiliate
+                                            </label>
+                                        </div>
+                                        <div class="form-check account-radio">
+                                            <input class="form-check-input" type="radio" value="Vendor"
+                                                id="VendorCheckbox" name="accountType">
+                                            <label class="form-check-label" for="VendorCheckbox">
+                                                Vendor
+                                            </label>
+                                        </div>
+                                        <div class="form-check account-radio">
+                                            <input class="form-check-input" type="radio" value="Customer"
+                                                id="CustomerCheckbox" name="accountType">
+                                            <label class="form-check-label" for="CustomerCheckbox">
+                                                Customer
+                                            </label>
+                                        </div>
                                     </div>
                                     <input type="submit" class="btnRegister" value="Register" />
                                 </div>
+                                <div class="col-md-3"></div>
                             </div>
                         </form>
                     </div>
