@@ -9,7 +9,7 @@
     <!------ Include the above in your HEAD tag ---------->
     <style>
         .body {
-            background: url("../../../assets/img/hot-girl-wallpaper.jpg") no-repeat;
+            background: url("../../../assets/img/bg-sign-in-basic.jpeg") no-repeat;
             background-size: cover;
         }
 

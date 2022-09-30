@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="nav-drop-body is-friend-requests">
                                     <!-- Friend request -->
-                                    <div class="media">
+                                    {{-- <div class="media">
                                         <figure class="media-left">
                                             <p class="image">
                                                 <img src="" data-demo-src="assets/img/avatars/bobby.jpg"
@@ -64,103 +64,7 @@
                                                 <i data-feather="user-minus"></i>
                                             </button>
                                         </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="" data-demo-src="assets/img/avatars/dan.jpg"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Danna Walker</a>
-                                            <span>You have 4 common friends</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-plus"></i>
-                                            </button>
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-minus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="" data-demo-src="assets/img/avatars/nelly.png"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span>You are now friends with <a href="#">Nelly Schwartz</a>. Check her
-                                                <a href="#">profile</a>.</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="tag"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="" data-demo-src="assets/img/avatars/milly.jpg"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Milly Augustine</a>
-                                            <span>You have 8 common friends</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-plus"></i>
-                                            </button>
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-minus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="" data-demo-src="assets/img/avatars/elise.jpg"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span>You are now friends with <a href="#">Elise Walker</a>. Check her <a
-                                                    href="#">profile</a>.</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="tag"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="" data-demo-src="assets/img/avatars/edward.jpeg"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span>You are now friends with <a href="#">Edwarda Mayers</a>. Check his
-                                                <a href="#">profile</a>.</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="tag"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="nav-drop-footer">
                                     <a href="#">View All</a>
@@ -184,7 +88,7 @@
                                 </div>
                                 <div class="nav-drop-body is-notifications">
                                     <!-- Notification -->
-                                    <div class="media">
+                                    {{-- <div class="media">
                                         <figure class="media-left">
                                             <p class="image">
                                                 <img src="" data-demo-src="assets/img/avatars/david.jpg"
@@ -201,64 +105,7 @@
                                                 <i data-feather="message-square"></i>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="" data-demo-src="assets/img/avatars/daniel.jpg"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">Daniela Wellington</a> liked your <a
-                                                    href="#">profile.</a></span>
-                                            <span class="time">43 minutes ago</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="" data-demo-src="assets/img/avatars/stella.jpg"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">Stella Bergmannos</a> shared a <a href="#">New
-                                                    video</a> on your wall.</span>
-                                            <span class="time">Yesterday</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="youtube"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="" data-demo-src="assets/img/avatars/elise.jpg"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a>
-                                                with you an 2 other people.</span>
-                                            <span class="time">2 days ago</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="image"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="nav-drop-footer">
                                     <a href="#">View All</a>
@@ -280,7 +127,7 @@
                                 </div>
                                 <div class="nav-drop-body is-friend-requests">
                                     <!-- Message -->
-                                    <div class="media">
+                                    {{-- <div class="media">
                                         <figure class="media-left">
                                             <p class="image">
                                                 <img src="https://via.placeholder.com/150x150"
@@ -298,48 +145,7 @@
                                                 <i data-feather="message-square"></i>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- Message -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="https://via.placeholder.com/150x150"
-                                                    data-demo-src="assets/img/avatars/edward.jpeg" data-user-popover="5"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Edward Mayers</a>
-                                            <span>That was a real pleasure seeing you last time we really should...</span>
-                                            <span class="time">last week</span>
-                                        </div>
-                                        <div class="media-right is-centered">
-                                            <div class="added-icon">
-                                                <i data-feather="message-square"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Message -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="https://via.placeholder.com/150x150"
-                                                    data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1"
-                                                    alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Dan Walker</a>
-                                            <span>Hey there, would it be possible to borrow your bicycle, i really
-                                                need...</span>
-                                            <span class="time">Jun 03 2018</span>
-                                        </div>
-                                        <div class="media-right is-centered">
-                                            <div class="added-icon">
-                                                <i data-feather="message-square"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="nav-drop-footer">
                                     <a href="#">Clear All</a>
@@ -480,59 +286,6 @@
                                                 <small>Main account</small>
                                             </div>
                                             <div class="media-right">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <hr class="account-divider">
-                                    <a href="/pages-main.html" class="account-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="image">
-                                                    <img src="https://via.placeholder.com/300x300"
-                                                        data-demo-src="assets/img/avatars/hanzo.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Location</h3>
-                                                <small>Company page</small>
-                                            </div>
-                                            <div class="media-right is-hidden">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/pages-main.html" class="account-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="image">
-                                                    <img src="https://via.placeholder.com/300x300"
-                                                        data-demo-src="assets/img/icons/logos/fastpizza.svg"
-                                                        alt="">
-                                                </div>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Fast Pizza</h3>
-                                                <small>Company page</small>
-                                            </div>
-                                            <div class="media-right is-hidden">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/pages-main.html" class="account-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="image">
-                                                    <img src="https://via.placeholder.com/300x300"
-                                                        data-demo-src="assets/img/icons/logos/slicer.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Slicer</h3>
-                                                <small>Company page</small>
-                                            </div>
-                                            <div class="media-right is-hidden">
                                                 <i data-feather="check"></i>
                                             </div>
                                         </div>
@@ -764,8 +517,7 @@
                             <div class="media">
                                 <figure class="media-left">
                                     <p class="image">
-                                        <img src="https://via.placeholder.com/300x300"
-                                            data-demo-src="assets/img/avatars/daniel.jpg" alt="">
+                                        <img src="" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                                     </p>
                                 </figure>
                                 <div class="media-content">
@@ -783,8 +535,7 @@
                             <div class="media">
                                 <figure class="media-left">
                                     <p class="image">
-                                        <img src="https://via.placeholder.com/300x300"
-                                            data-demo-src="assets/img/avatars/stella.jpg" alt="">
+                                        <img src="" data-demo-src="assets/img/avatars/stella.jpg" alt="">
                                     </p>
                                 </figure>
                                 <div class="media-content">
@@ -802,8 +553,7 @@
                             <div class="media">
                                 <figure class="media-left">
                                     <p class="image">
-                                        <img src="https://via.placeholder.com/300x300"
-                                            data-demo-src="assets/img/avatars/elise.jpg" alt="">
+                                        <img src="" data-demo-src="assets/img/avatars/elise.jpg" alt="">
                                     </p>
                                 </figure>
                                 <div class="media-content">
@@ -1332,11 +1082,11 @@
                                 250 X ADVERTISMENT X 250
                             </p>
 
-                            <script>
+                            {{-- <script>
                                 googletag.cmd.push(function() {
                                     googletag.display('banner-ad');
                                 });
-                            </script>
+                            </script> --}}
                         </div>
                     </div>
                     <!-- /Left side column -->
@@ -1575,25 +1325,19 @@
                                                             <img src="https://via.placeholder.com/478x344"
                                                                 data-demo-src="assets/img/demo/gif/6.gif" alt="">
                                                             <img src="https://via.placeholder.com/478x344"
-                                                                data-demo-src="assets/img/demo/gif/7.gif"
-                                                                alt="">
+                                                                data-demo-src="assets/img/demo/gif/7.gif" alt="">
                                                             <img src="https://via.placeholder.com/478x344"
-                                                                data-demo-src="assets/img/demo/gif/8.gif"
-                                                                alt="">
+                                                                data-demo-src="assets/img/demo/gif/8.gif" alt="">
                                                         </div>
                                                         <div class="gif-block">
                                                             <img src="https://via.placeholder.com/478x344"
-                                                                data-demo-src="assets/img/demo/gif/9.gif"
-                                                                alt="">
+                                                                data-demo-src="assets/img/demo/gif/9.gif" alt="">
                                                             <img src="https://via.placeholder.com/478x344"
-                                                                data-demo-src="assets/img/demo/gif/10.gif"
-                                                                alt="">
+                                                                data-demo-src="assets/img/demo/gif/10.gif" alt="">
                                                             <img src="https://via.placeholder.com/478x344"
-                                                                data-demo-src="assets/img/demo/gif/11.gif"
-                                                                alt="">
+                                                                data-demo-src="assets/img/demo/gif/11.gif" alt="">
                                                             <img src="https://via.placeholder.com/478x344"
-                                                                data-demo-src="assets/img/demo/gif/12.gif"
-                                                                alt="">
+                                                                data-demo-src="assets/img/demo/gif/12.gif" alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1816,8 +1560,7 @@
                                                     </a>
                                                     <!-- Hidden filter input -->
                                                     <div id="compose-search" class="control is-hidden">
-                                                        <input type="text" class="input"
-                                                            placeholder="Search People">
+                                                        <input type="text" class="input" placeholder="Search People">
                                                         <span>
                                                             <i data-feather="search"></i>
                                                         </span>
@@ -1837,7 +1580,7 @@
                                                             <label for="checkbox-3"></label>
                                                         </div>
                                                     </div>
-                                                    <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                                    <img class="friend-avatar" src=""
                                                         data-demo-src="assets/img/avatars/dan.jpg" alt="">
                                                     <div class="friend-name">Dan Walker</div>
                                                 </div>
@@ -1849,7 +1592,7 @@
                                                             <label for="checkbox-4"></label>
                                                         </div>
                                                     </div>
-                                                    <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                                    <img class="friend-avatar" src=""
                                                         data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                                                     <div class="friend-name">Daniel Wellington</div>
                                                 </div>
@@ -1861,7 +1604,7 @@
                                                             <label for="checkbox-5"></label>
                                                         </div>
                                                     </div>
-                                                    <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                                    <img class="friend-avatar" src=""
                                                         data-demo-src="assets/img/avatars/stella.jpg" alt="">
                                                     <div class="friend-name">Stella Bergmann</div>
                                                 </div>
@@ -1873,7 +1616,7 @@
                                                             <label for="checkbox-6"></label>
                                                         </div>
                                                     </div>
-                                                    <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                                    <img class="friend-avatar" src=""
                                                         data-demo-src="assets/img/avatars/david.jpg" alt="">
                                                     <div class="friend-name">David Kim</div>
                                                 </div>
@@ -1885,7 +1628,7 @@
                                                             <label for="checkbox-7"></label>
                                                         </div>
                                                     </div>
-                                                    <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                                    <img class="friend-avatar" src=""
                                                         data-demo-src="assets/img/avatars/nelly.png" alt="">
                                                     <div class="friend-name">Nelly Schwartz</div>
                                                 </div>
@@ -1917,11 +1660,11 @@
                                 700 X ADVERTISMENT X 90
                             </p>
 
-                            <script>
+                            {{-- <script>
                                 googletag.cmd.push(function() {
                                     googletag.display('banner-ad');
                                 });
-                            </script>
+                            </script> --}}
                         </div>
 
 
@@ -2099,9 +1842,8 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1"
-                                                    alt="">
+                                                <img src="" data-demo-src="assets/img/avatars/dan.jpg"
+                                                    data-user-popover="1" alt="">
                                             </div>
                                         </div>
                                         <!-- Content -->
@@ -2131,8 +1873,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/david.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/david.jpg"
                                                             data-user-popover="4" alt="">
                                                     </div>
                                                 </div>
@@ -2233,9 +1974,8 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/rolf.jpg" data-user-popover="13"
-                                                    alt="">
+                                                <img src="" data-demo-src="assets/img/avatars/rolf.jpg"
+                                                    data-user-popover="13" alt="">
                                             </div>
                                         </div>
                                         <!-- Content -->
@@ -2261,8 +2001,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/elise.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/elise.jpg"
                                                             data-user-popover="6" alt="">
                                                     </div>
                                                 </div>
@@ -2325,8 +2064,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/rolf.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/rolf.jpg"
                                                             data-user-popover="13" alt="">
                                                     </div>
                                                 </div>
@@ -2389,8 +2127,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/elise.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/elise.jpg"
                                                             data-user-popover="6" alt="">
                                                     </div>
                                                 </div>
@@ -2490,9 +2227,8 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/lana.jpeg" data-user-popover="10"
-                                                    alt="">
+                                                <img src="" data-demo-src="assets/img/avatars/lana.jpeg"
+                                                    data-user-popover="10" alt="">
                                             </div>
                                         </div>
                                         <!-- Content -->
@@ -2565,7 +2301,7 @@
                                             <!-- Additional actions -->
                                             <div class="actions">
                                                 <div class="image is-32x32">
-                                                    <img class="is-rounded" src="https://via.placeholder.com/300x300"
+                                                    <img class="is-rounded" src=""
                                                         data-demo-src="assets/img/avatars/jenna.png"
                                                         data-user-popover="0" alt="">
                                                 </div>
@@ -2766,9 +2502,8 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/elise.jpg" data-user-popover="6"
-                                                    alt="">
+                                                <img src="" data-demo-src="assets/img/avatars/elise.jpg"
+                                                    data-user-popover="6" alt="">
                                             </div>
                                         </div>
                                         <!-- Content -->
@@ -2795,7 +2530,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
+                                                        <img src=""
                                                             data-demo-src="assets/img/avatars/daniel.jpg"
                                                             data-user-popover="3" alt="">
                                                     </div>
@@ -2909,7 +2644,7 @@
                                             <!-- Additional actions -->
                                             <div class="actions">
                                                 <div class="image is-32x32">
-                                                    <img class="is-rounded" src="https://via.placeholder.com/300x300"
+                                                    <img class="is-rounded" src=""
                                                         data-demo-src="assets/img/avatars/jenna.png"
                                                         data-user-popover="0" alt="">
                                                 </div>
@@ -3102,8 +2837,7 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/gaelle.jpeg"
+                                                <img src="" data-demo-src="assets/img/avatars/gaelle.jpeg"
                                                     data-user-popover="11" alt="">
                                             </div>
                                         </div>
@@ -3131,8 +2865,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/elise.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/elise.jpg"
                                                             data-user-popover="6" alt="">
                                                     </div>
                                                 </div>
@@ -3196,8 +2929,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/rolf.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/rolf.jpg"
                                                             data-user-popover="13" alt="">
                                                     </div>
                                                 </div>
@@ -3259,8 +2991,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/elise.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/elise.jpg"
                                                             data-user-popover="6" alt="">
                                                     </div>
                                                 </div>
@@ -3360,9 +3091,8 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/nelly.png" data-user-popover="9"
-                                                    alt="">
+                                                <img src="" data-demo-src="assets/img/avatars/nelly.png"
+                                                    data-user-popover="9" alt="">
                                             </div>
                                         </div>
                                         <!-- Content -->
@@ -3434,7 +3164,7 @@
                                             <!-- Additional actions -->
                                             <div class="actions">
                                                 <div class="image is-32x32">
-                                                    <img class="is-rounded" src="https://via.placeholder.com/300x300"
+                                                    <img class="is-rounded" src=""
                                                         data-demo-src="assets/img/avatars/jenna.png"
                                                         data-user-popover="0" alt="">
                                                 </div>
@@ -3671,9 +3401,8 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/jenna.png" data-user-popover="0"
-                                                    alt="">
+                                                <img src="" data-demo-src="assets/img/avatars/jenna.png"
+                                                    data-user-popover="0" alt="">
                                             </div>
                                         </div>
                                         <!-- Content -->
@@ -3700,8 +3429,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/lana.jpeg"
+                                                        <img src="" data-demo-src="assets/img/avatars/lana.jpeg"
                                                             data-user-popover="10" alt="">
                                                     </div>
                                                 </div>
@@ -3764,8 +3492,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/david.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/david.jpg"
                                                             data-user-popover="4" alt="">
                                                     </div>
                                                 </div>
@@ -3827,8 +3554,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/mike.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/mike.jpg"
                                                             data-user-popover="12" alt="">
                                                     </div>
                                                 </div>
@@ -3889,7 +3615,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
+                                                        <img src=""
                                                             data-demo-src="assets/img/avatars/stella.jpg"
                                                             data-user-popover="2" alt="">
                                                     </div>
@@ -3988,9 +3714,8 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/daniel.jpg" data-user-popover="3"
-                                                    alt="">
+                                                <img src="" data-demo-src="assets/img/avatars/daniel.jpg"
+                                                    data-user-popover="3" alt="">
                                             </div>
                                         </div>
                                         <!-- Content -->
@@ -4052,9 +3777,8 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/bobby.jpg" data-user-popover="8"
-                                                    alt="">
+                                                <img src="" data-demo-src="assets/img/avatars/bobby.jpg"
+                                                    data-user-popover="8" alt="">
                                             </div>
                                         </div>
                                         <!-- Content -->
@@ -4080,7 +3804,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
+                                                        <img src=""
                                                             data-demo-src="assets/img/avatars/stella.jpg"
                                                             data-user-popover="2" alt="">
                                                     </div>
@@ -4142,8 +3866,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/lana.jpeg"
+                                                        <img src="" data-demo-src="assets/img/avatars/lana.jpeg"
                                                             data-user-popover="10" alt="">
                                                     </div>
                                                 </div>
@@ -4253,7 +3976,7 @@
                                             <!-- Additional actions -->
                                             <div class="actions">
                                                 <div class="image is-32x32">
-                                                    <img class="is-rounded" src="https://via.placeholder.com/300x300"
+                                                    <img class="is-rounded" src=""
                                                         data-demo-src="assets/img/avatars/jenna.png"
                                                         data-user-popover="0" alt="">
                                                 </div>
@@ -4457,9 +4180,8 @@
                                         <!-- User image -->
                                         <div class="media-left">
                                             <div class="image">
-                                                <img src="https://via.placeholder.com/300x300"
-                                                    data-demo-src="assets/img/avatars/lana.jpeg" data-user-popover="10"
-                                                    alt="">
+                                                <img src="" data-demo-src="assets/img/avatars/lana.jpeg"
+                                                    data-user-popover="10" alt="">
                                             </div>
                                         </div>
                                         <!-- Content -->
@@ -4486,8 +4208,7 @@
                                                 <!-- User image -->
                                                 <div class="media-left">
                                                     <div class="image">
-                                                        <img src="https://via.placeholder.com/300x300"
-                                                            data-demo-src="assets/img/avatars/david.jpg"
+                                                        <img src="" data-demo-src="assets/img/avatars/david.jpg"
                                                             data-user-popover="4" alt="">
                                                     </div>
                                                 </div>
@@ -4599,7 +4320,7 @@
                                             <!-- Additional actions -->
                                             <div class="actions">
                                                 <div class="image is-32x32">
-                                                    <img class="is-rounded" src="https://via.placeholder.com/300x300"
+                                                    <img class="is-rounded" src=""
                                                         data-demo-src="assets/img/avatars/jenna.png"
                                                         data-user-popover="0" alt="">
                                                 </div>
@@ -4802,7 +4523,7 @@
                                             <!-- Additional actions -->
                                             <div class="actions">
                                                 <div class="image is-32x32">
-                                                    <img class="is-rounded" src="https://via.placeholder.com/300x300"
+                                                    <img class="is-rounded" src=""
                                                         data-demo-src="assets/img/avatars/jenna.png"
                                                         data-user-popover="0" alt="">
                                                 </div>
@@ -4897,9 +4618,9 @@
                                     </div>
                                 </div>
                                 <!-- Story block -->
-                                <div class="story-block">
+                                {{-- <div class="story-block">
                                     <div class="img-wrapper">
-                                        <img src="https://i.pinimg.com/474x/55/ff/29/55ff2945c2b07a59d6ed3eb6450b2f9d.jpg"
+                                        <img src=""
                                             data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1"
                                             alt="">
                                     </div>
@@ -4907,36 +4628,12 @@
                                         <span>Sofia Sof</span>
                                         <span>1 hour ago</span>
                                     </div>
-                                </div>
-                                <!-- Story block -->
-                                <div class="story-block">
-                                    <div class="img-wrapper">
-                                        <img src="https://pbs.twimg.com/profile_images/1112396714344800256/DBSFv7Qp_400x400.jpg"
-                                            data-demo-src="assets/img/avatars/bobby.jpg" data-user-popover="8"
-                                            alt="">
-                                    </div>
-                                    <div class="story-meta">
-                                        <span>Derek J.Slattery</span>
-                                        <span>3 days ago</span>
-                                    </div>
-                                </div>
-                                <!-- Story block -->
-                                <div class="story-block">
-                                    <div class="img-wrapper">
-                                        <img src="https://sc04.alicdn.com/kf/H503b786f17c44510adf482f3cc9cdfd2R.jpg"
-                                            data-demo-src="assets/img/avatars/elise.jpg" data-user-popover="6"
-                                            alt="">
-                                    </div>
-                                    <div class="story-meta">
-                                        <span>Elise Walker</span>
-                                        <span>Last week</span>
-                                    </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <!-- Birthday widget -->
                         <!-- /partials/widgets/birthday-widget.html -->
-                        <div class="card is-birthday-card has-background-image"
+                        {{-- <div class="card is-birthday-card has-background-image"
                             data-background="assets/img/illustrations/cards/birthday-bg.svg">
                             <div class="card-heading">
                                 <i data-feather="gift"></i>
@@ -4996,7 +4693,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!-- Suggested friends widget -->
 
                         <div id="banner-ad" style="width: 300px; height: 250px; background-color: #ddd;">
@@ -5005,11 +4702,11 @@
                                 300 X ADVERTISMENT X 250
                             </p>
 
-                            <script>
+                            {{-- <script>
                                 googletag.cmd.push(function() {
                                     googletag.display('banner-ad');
                                 });
-                            </script>
+                            </script> --}}
                         </div>
 
 
@@ -5238,7 +4935,7 @@
 
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-1">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/dan.jpg" alt="">
                                         <div class="friend-name">Dan Walker</div>
                                         <div class="round-checkbox is-small">
@@ -5250,7 +4947,7 @@
                                     </div>
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-2">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                                         <div class="friend-name">Daniel Wellington</div>
                                         <div class="round-checkbox is-small">
@@ -5262,7 +4959,7 @@
                                     </div>
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-3">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/stella.jpg" alt="">
                                         <div class="friend-name">Stella Bergmann</div>
                                         <div class="round-checkbox is-small">
@@ -5274,7 +4971,7 @@
                                     </div>
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-4">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/david.jpg" alt="">
                                         <div class="friend-name">David Kim</div>
                                         <div class="round-checkbox is-small">
@@ -5286,7 +4983,7 @@
                                     </div>
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-5">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/nelly.png" alt="">
                                         <div class="friend-name">Nelly Schwartz</div>
                                         <div class="round-checkbox is-small">
@@ -5298,7 +4995,7 @@
                                     </div>
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-6">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/elise.jpg" alt="">
                                         <div class="friend-name">Elise Walker</div>
                                         <div class="round-checkbox is-small">
@@ -5310,7 +5007,7 @@
                                     </div>
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-7">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/bobby.jpg" alt="">
                                         <div class="friend-name">Bobby Brown</div>
                                         <div class="round-checkbox is-small">
@@ -5322,7 +5019,7 @@
                                     </div>
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-8">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/lana.jpeg" alt="">
                                         <div class="friend-name">Lana Henrikssen</div>
                                         <div class="round-checkbox is-small">
@@ -5334,7 +5031,7 @@
                                     </div>
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-9">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/gaelle.jpeg" alt="">
                                         <div class="friend-name">Gaelle Morris</div>
                                         <div class="round-checkbox is-small">
@@ -5346,7 +5043,7 @@
                                     </div>
                                     <!-- Friend -->
                                     <div class="friend-block" data-ref="ref-10">
-                                        <img class="friend-avatar" src="https://via.placeholder.com/300x300"
+                                        <img class="friend-avatar" src=""
                                             data-demo-src="assets/img/avatars/mike.jpg" alt="">
                                         <div class="friend-name">Mike Lasalle</div>
                                         <div class="round-checkbox is-small">
@@ -5752,8 +5449,7 @@
                             </div>
                             <div class="right-section">
                                 <div class="header">
-                                    <img src="https://via.placeholder.com/300x300"
-                                        data-demo-src="assets/img/avatars/jenna.png" alt="">
+                                    <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                                     <div class="user-meta">
                                         <span>Jenna Davis <small>is live</small></span>
                                         <span><small>right now</small></span>
@@ -5859,8 +5555,8 @@
                                         <div class="dropdown is-spaced is-right dropdown-trigger">
                                             <div>
                                                 <div class="avatar-button">
-                                                    <img src="https://via.placeholder.com/300x300"
-                                                        data-demo-src="assets/img/avatars/jenna.png" alt="">
+                                                    <img src="" data-demo-src="assets/img/avatars/jenna.png"
+                                                        alt="">
                                                     <i data-feather="triangle"></i>
                                                 </div>
                                             </div>
@@ -5868,7 +5564,7 @@
                                                 <div class="dropdown-content">
                                                     <a href="#" class="dropdown-item is-selected">
                                                         <div class="media">
-                                                            <img src="https://via.placeholder.com/300x300"
+                                                            <img src=""
                                                                 data-demo-src="assets/img/avatars/jenna.png"
                                                                 alt="">
                                                             <div class="media-content">
@@ -5916,9 +5612,8 @@
                                         <div class="media is-comment">
                                             <figure class="media-left">
                                                 <p class="image is-32x32">
-                                                    <img src="https://via.placeholder.com/300x300"
-                                                        data-demo-src="assets/img/avatars/dan.jpg" alt=""
-                                                        data-user-popover="1">
+                                                    <img src="" data-demo-src="assets/img/avatars/dan.jpg"
+                                                        alt="" data-user-popover="1">
                                                 </p>
                                             </figure>
                                             <div class="media-content">
@@ -5936,9 +5631,8 @@
                                         <div class="media is-comment">
                                             <figure class="media-left">
                                                 <p class="image is-32x32">
-                                                    <img src="https://via.placeholder.com/300x300"
-                                                        data-demo-src="assets/img/avatars/david.jpg" alt=""
-                                                        data-user-popover="4">
+                                                    <img src="" data-demo-src="assets/img/avatars/david.jpg"
+                                                        alt="" data-user-popover="4">
                                                 </p>
                                             </figure>
                                             <div class="media-content">
@@ -5954,9 +5648,8 @@
                                         <div class="media is-comment">
                                             <figure class="media-left">
                                                 <p class="image is-32x32">
-                                                    <img src="https://via.placeholder.com/300x300"
-                                                        data-demo-src="assets/img/avatars/rolf.jpg" alt=""
-                                                        data-user-popover="17">
+                                                    <img src="" data-demo-src="assets/img/avatars/rolf.jpg"
+                                                        alt="" data-user-popover="17">
                                                 </p>
                                             </figure>
                                             <div class="media-content">
@@ -5975,8 +5668,8 @@
 
                                 <div class="comment-controls">
                                     <div class="controls-inner">
-                                        <img src="https://via.placeholder.com/300x300"
-                                            data-demo-src="assets/img/avatars/jenna.png" alt="">
+                                        <img src="" data-demo-src="assets/img/avatars/jenna.png"
+                                            alt="">
                                         <div class="control">
                                             <textarea class="textarea comment-textarea is-rounded" rows="1"></textarea>
                                             <button class="emoji-button">
@@ -6345,8 +6038,8 @@
                 <div class="nav-start">
                     <div class="recipient-block">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/dan.jpg" alt="">
+                            <img class="user-avatar" src="" data-demo-src="assets/img/avatars/dan.jpg"
+                                alt="">
                         </div>
                         <div class="username">
                             <span>Dan Walker</span>
@@ -6516,8 +6209,8 @@
                     <div class="user-item is-active" data-chat-user="dan" data-full-name="Dan Walker"
                         data-status="Online">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/dan.jpg" alt="">
+                            <img class="user-avatar" src="" data-demo-src="assets/img/avatars/dan.jpg"
+                                alt="">
                             <div class="user-status is-online"></div>
                         </div>
                     </div>
@@ -6525,8 +6218,8 @@
                     <div class="user-item" data-chat-user="stella" data-full-name="Stella Bergmann"
                         data-status="Busy">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/stella.jpg" alt="">
+                            <img class="user-avatar" src="" data-demo-src="assets/img/avatars/stella.jpg"
+                                alt="">
                             <div class="user-status is-busy"></div>
                         </div>
                     </div>
@@ -6534,16 +6227,16 @@
                     <div class="user-item" data-chat-user="daniel" data-full-name="Daniel Wellington"
                         data-status="Away">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/daniel.jpg" alt="">
+                            <img class="user-avatar" src="" data-demo-src="assets/img/avatars/daniel.jpg"
+                                alt="">
                             <div class="user-status is-away"></div>
                         </div>
                     </div>
                     <!-- User -->
                     <div class="user-item" data-chat-user="david" data-full-name="David Kim" data-status="Busy">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/david.jpg" alt="">
+                            <img class="user-avatar" src="" data-demo-src="assets/img/avatars/david.jpg"
+                                alt="">
                             <div class="user-status is-busy"></div>
                         </div>
                     </div>
@@ -6551,16 +6244,16 @@
                     <div class="user-item" data-chat-user="edward" data-full-name="Edward Mayers"
                         data-status="Online">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/edward.jpeg" alt="">
+                            <img class="user-avatar" src="" data-demo-src="assets/img/avatars/edward.jpeg"
+                                alt="">
                             <div class="user-status is-online"></div>
                         </div>
                     </div>
                     <!-- User -->
                     <div class="user-item" data-chat-user="elise" data-full-name="Elise Walker" data-status="Away">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/elise.jpg" alt="">
+                            <img class="user-avatar" src="" data-demo-src="assets/img/avatars/elise.jpg"
+                                alt="">
                             <div class="user-status is-away"></div>
                         </div>
                     </div>
@@ -6568,8 +6261,8 @@
                     <div class="user-item" data-chat-user="nelly" data-full-name="Nelly Schwartz"
                         data-status="Busy">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/nelly.png" alt="">
+                            <img class="user-avatar" src="" data-demo-src="assets/img/avatars/nelly.png"
+                                alt="">
                             <div class="user-status is-busy"></div>
                         </div>
                     </div>
@@ -6577,8 +6270,8 @@
                     <div class="user-item" data-chat-user="milly" data-full-name="Milly Augustine"
                         data-status="Busy">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/milly.jpg" alt="">
+                            <img class="user-avatar" src="" data-demo-src="assets/img/avatars/milly.jpg"
+                                alt="">
                             <div class="user-status is-busy"></div>
                         </div>
                     </div>
@@ -6600,8 +6293,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                         <div class="message-block">
                             <span>8:03am</span>
                             <div class="message-text">Hi Jenna! I made a new design, and i wanted to show it to you.</div>
@@ -6609,8 +6301,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                         <div class="message-block">
                             <span>8:03am</span>
                             <div class="message-text">It's quite clean and it's inspired from Bulkit.</div>
@@ -6618,8 +6309,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:12am</span>
                             <div class="message-text">Oh really??! I want to see that.</div>
@@ -6627,8 +6317,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                         <div class="message-block">
                             <span>8:13am</span>
                             <div class="message-text">FYI it was done in less than a day.</div>
@@ -6636,8 +6325,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:17am</span>
                             <div class="message-text">Great to hear it. Just send me the PSD files so i can have a look at
@@ -6646,8 +6334,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:18am</span>
                             <div class="message-text">And if you have a prototype, you can also send me the link to it.
@@ -6663,8 +6350,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>10:34am</span>
                             <div class="message-text">Hey Stella! Aren't we supposed to go the theatre after work?.</div>
@@ -6672,8 +6358,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>10:37am</span>
                             <div class="message-text">Just remembered it.</div>
@@ -6681,8 +6366,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/stella.jpg" alt="">
                         <div class="message-block">
                             <span>11:22am</span>
                             <div class="message-text">Yeah you always do that, forget about everything.</div>
@@ -6697,8 +6381,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>3:24pm</span>
                             <div class="message-text">Daniel, Amanda told me about your issue, how can I help?</div>
@@ -6706,8 +6389,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                         <div class="message-block">
                             <span>3:42pm</span>
                             <div class="message-text">Hey Jenna, thanks for answering so quickly. Iam stuck, i need a car.
@@ -6716,8 +6398,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                         <div class="message-block">
                             <span>3:43pm</span>
                             <div class="message-text">Can i borrow your car for a quick ride to San Fransisco? Iam running
@@ -6734,8 +6415,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>12:34pm</span>
                             <div class="message-text">Damn you! Why would you even implement this in the game?.</div>
@@ -6743,8 +6423,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>12:32pm</span>
                             <div class="message-text">I just HATE aliens.</div>
@@ -6752,8 +6431,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/david.jpg" alt="">
                         <div class="message-block">
                             <span>13:09pm</span>
                             <div class="message-text">C'mon, you just gotta learn the tricks. You can't expect aliens to
@@ -6762,8 +6440,7 @@
                         </div>
                     </div>
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/david.jpg" alt="">
                         <div class="message-block">
                             <span>13:11pm</span>
                             <div class="message-text">I checked the replay and for example, you always get supply blocked.
@@ -6772,8 +6449,7 @@
                         </div>
                     </div>
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>13:12pm</span>
                             <div class="message-text">I know but i struggle when i have to decide what to make from
@@ -6781,8 +6457,7 @@
                         </div>
                     </div>
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/david.jpg" alt="">
                         <div class="message-block">
                             <span>13:17pm</span>
                             <div class="message-text">Join me in game, i'll show you.</div>
@@ -6797,8 +6472,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                         <div class="message-block">
                             <span>4:55pm</span>
                             <div class="message-text">Hey Jenna, what's up?</div>
@@ -6806,8 +6480,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                         <div class="message-block">
                             <span>4:56pm</span>
                             <div class="message-text">Iam coming to LA tomorrow. Interested in having lunch?</div>
@@ -6815,8 +6488,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>5:21pm</span>
                             <div class="message-text">Hey mate, it's been a while. Sure I would love to.</div>
@@ -6824,8 +6496,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                         <div class="message-block">
                             <span>5:27pm</span>
                             <div class="message-text">Ok. Let's say i pick you up at 12:30 at work, works?</div>
@@ -6833,8 +6504,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>5:43pm</span>
                             <div class="message-text">Yup, that works great.</div>
@@ -6842,8 +6512,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>5:44pm</span>
                             <div class="message-text">And yeah, don't forget to bring some of my favourite cheese cake.
@@ -6852,8 +6521,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                         <div class="message-block">
                             <span>5:27pm</span>
                             <div class="message-text">No worries</div>
@@ -6868,8 +6536,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>11:53am</span>
                             <div class="message-text">Elise, i forgot my folder at your place yesterday.</div>
@@ -6877,8 +6544,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>11:53am</span>
                             <div class="message-text">I need it badly, it's work stuff.</div>
@@ -6886,8 +6552,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/elise.jpg" alt="">
                         <div class="message-block">
                             <span>12:19pm</span>
                             <div class="message-text">Yeah i noticed. I'll drop it in half an hour at your office.</div>
@@ -6902,8 +6567,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:22pm</span>
                             <div class="message-text">So you watched the movie?</div>
@@ -6911,8 +6575,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:22pm</span>
                             <div class="message-text">Was it scary?</div>
@@ -6920,8 +6583,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/nelly.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/nelly.png" alt="">
                         <div class="message-block">
                             <span>9:03pm</span>
                             <div class="message-text">It was so frightening, i felt my heart was about to blow inside my
@@ -6937,8 +6599,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                         <div class="message-block">
                             <span>2:01pm</span>
                             <div class="message-text">Hello Jenna, did you read my proposal?</div>
@@ -6946,8 +6607,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                         <div class="message-block">
                             <span>2:01pm</span>
                             <div class="message-text">Didn't hear from you since i sent it.</div>
@@ -6955,8 +6615,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>2:02pm</span>
                             <div class="message-text">Hello Milly, Iam really sorry, Iam so busy recently, but i had the
@@ -6966,8 +6625,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                         <div class="message-block">
                             <span>2:04pm</span>
                             <div class="message-text">And what did you think about it?</div>
@@ -6975,8 +6633,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>2:05pm</span>
                             <div class="message-text">Actually it's quite good, there might be some small changes but
@@ -6986,8 +6643,7 @@
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>2:07pm</span>
                             <div class="message-text">I think that i can give it to my boss at this stage.</div>
@@ -6995,8 +6651,7 @@
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg"
-                            alt="">
+                        <img src="" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                         <div class="message-block">
                             <span>2:09pm</span>
                             <div class="message-text">Crossing fingers then</div>
@@ -7139,8 +6794,7 @@
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300"
-                                    data-demo-src="assets/img/avatars/dan.jpg" alt="">
+                                <img src="" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -7260,8 +6914,7 @@
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300"
-                                    data-demo-src="assets/img/avatars/stella.jpg" alt="">
+                                <img src="" data-demo-src="assets/img/avatars/stella.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -7376,8 +7029,7 @@
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300"
-                                    data-demo-src="assets/img/avatars/daniel.jpg" alt="">
+                                <img src="" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -7497,8 +7149,7 @@
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300"
-                                    data-demo-src="assets/img/avatars/david.jpg" alt="">
+                                <img src="" data-demo-src="assets/img/avatars/david.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -7618,8 +7269,7 @@
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300"
-                                    data-demo-src="assets/img/avatars/edward.jpeg" alt="">
+                                <img src="" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -7734,8 +7384,7 @@
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300"
-                                    data-demo-src="assets/img/avatars/elise.jpg" alt="">
+                                <img src="" data-demo-src="assets/img/avatars/elise.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -7845,8 +7494,7 @@
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300"
-                                    data-demo-src="assets/img/avatars/nelly.png" alt="">
+                                <img src="" data-demo-src="assets/img/avatars/nelly.png" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -7966,8 +7614,7 @@
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300"
-                                    data-demo-src="assets/img/avatars/milly.jpg" alt="">
+                                <img src="" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
