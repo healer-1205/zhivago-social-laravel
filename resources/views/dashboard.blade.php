@@ -259,7 +259,7 @@
                         <div class="nav-drop is-account-dropdown">
                             <div class="inner">
                                 <div class="nav-drop-header">
-                                    <span class="username">Jenna Davis</span>
+                                    <span class="username">{{ auth()->user()->name }}</span>
                                     <label class="theme-toggle">
                                         <input type="checkbox">
                                         <span class="toggler">
