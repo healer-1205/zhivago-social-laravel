@@ -75,4 +75,14 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function setAccountTypeAttribute($value)
+    {
+        $this->attributes['accountType'] = json_encode($value);
+    }
+
+    public function getAccountTypeAttribute($value)
+    {
+        return $this->attributes['accountType'] = json_decode($value);
+    }
 }

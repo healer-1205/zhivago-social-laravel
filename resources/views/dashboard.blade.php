@@ -10,7 +10,7 @@
 
 @extends('layouts.default')
 @section('title')
-    {{ auth()->user()->name }} |dashboard
+    {{ auth()->user()->username }} |dashboard
 @endsection
 
 
@@ -250,8 +250,7 @@
                     </div>
                     <div id="account-dropdown" class="navbar-item is-account drop-trigger has-caret">
                         <div class="user-image">
-                            <img src="https://i.pinimg.com/736x/c9/e3/e8/c9e3e810a8066b885ca4e882460785fa.jpg"
-                                data-demo-src="https://i.pinimg.com/736x/c9/e3/e8/c9e3e810a8066b885ca4e882460785fa.jpg"
+                            <img src="assets/img/avatars/default.jpg" data-demo-src="assets/img/avatars/default.jpg"
                                 alt="">
                             <span class="indicator"></span>
                         </div>
@@ -259,7 +258,7 @@
                         <div class="nav-drop is-account-dropdown">
                             <div class="inner">
                                 <div class="nav-drop-header">
-                                    <span class="username">{{ auth()->user()->name }}</span>
+                                    <span class="username">{{ auth()->user()->username }}</span>
                                     <label class="theme-toggle">
                                         <input type="checkbox">
                                         <span class="toggler">
@@ -282,8 +281,10 @@
                                                 </div>
                                             </div>
                                             <div class="media-content">
-                                                <h3>{{ auth()->user()->name }}</h3>
-                                                <small>{{ auth()->user()->accountType }}</small>
+                                                <h3>{{ auth()->user()->username }}</h3>
+                                                @foreach (auth()->user()->accountType as $accountType)
+                                                    <small>{{ $accountType }}</small>
+                                                @endforeach
                                             </div>
                                             <div class="media-right">
                                                 <i data-feather="check"></i>
@@ -1137,8 +1138,8 @@
                                     <!-- Compose form -->
                                     <div class="compose">
                                         <div class="compose-form">
-                                            <img src="https://i.pinimg.com/736x/c9/e3/e8/c9e3e810a8066b885ca4e882460785fa.jpg"
-                                                data-demo-src="assets/img/avatars/jenna.png" alt="">
+                                            <img src="assets/img/avatars/default.jpg"
+                                                data-demo-src="assets/img/avatars/default.jpg" alt="">
                                             <div class="control">
                                                 <textarea id="publish" class="textarea" rows="3" placeholder="Write something about you..."></textarea>
                                             </div>

@@ -40,9 +40,9 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
 
         RateLimiter::for('login', function (Request $request) {
-            $email = (string) $request->email;
+            $username = (string) $request->username;
 
-            return Limit::perMinute(5)->by($email . $request->ip());
+            return Limit::perMinute(5)->by($username . $request->ip());
         });
 
         RateLimiter::for('two-factor', function (Request $request) {
@@ -50,7 +50,8 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         Fortify::authenticateUsing(function (Request $request) {
-            $user = User::where('email', $request->email)->first();
+            // to login with username, changed config in confit/fortify.php line 49
+            $user = User::where('username', $request->username)->first();
 
             if (
                 $user &&
@@ -59,9 +60,9 @@ class FortifyServiceProvider extends ServiceProvider
                 return $user;
             } else {
                 if (!$user) {
-                    $request->session()->flash('email_invalid', 'Invalid!');
+                    $request->session()->flash('username_invalid', 'Invalid Username, Please try again with other!');
                 } else {
-                    $request->session()->flash('password_invalid', 'Invalid!');
+                    $request->session()->flash('password_invalid', 'Invalid Password, Please retype again!');
                 }
                 return false;
             }

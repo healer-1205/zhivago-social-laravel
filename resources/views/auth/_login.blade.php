@@ -1,174 +1,172 @@
-@extends('layouts.default')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('title')
-    {{ config('app.name') }} | login
-@endsection
-{{-- <x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
-
-        <div class="card-body">
-
-            <x-jet-validation-errors class="mb-3 rounded-0" />
-
-            @if (session('status'))
-                <div class="alert alert-success mb-3 rounded-0" role="alert">
-                    {{ session('status') }}
-                </div>
-            @endif
-
-            <form method="POST" action="{{ route('login') }}">
-                @csrf
-                <div class="mb-3">
-                    <x-jet-label value="{{ __('Email') }}" />
-
-                    <x-jet-input class="{{ $errors->has('email') ? 'is-invalid' : '' }}" type="email"
-                                 name="email" :value="old('email')" required />
-                    <x-jet-input-error for="email"></x-jet-input-error>
-                </div>
-
-                <div class="mb-3">
-                    <x-jet-label value="{{ __('Password') }}" />
-
-                    <x-jet-input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" type="password"
-                                 name="password" required autocomplete="current-password" />
-                    <x-jet-input-error for="password"></x-jet-input-error>
-                </div>
-
-                <div class="mb-3">
-                    <div class="custom-control custom-checkbox">
-                        <x-jet-checkbox id="remember_me" name="remember" />
-                        <label class="custom-control-label" for="remember_me">
-                            {{ __('Remember Me') }}
-                        </label>
-                    </div>
-                </div>
-
-                <div class="mb-0">
-                    <div class="d-flex justify-content-end align-items-baseline">
-                        @if (Route::has('password.request'))
-                            <a class="text-muted me-3" href="{{ route('password.request') }}">
-                                {{ __('Forgot your password?') }}
-                            </a>
-                        @endif
-
-                        <x-jet-button>
-                            {{ __('Log in') }}
-                        </x-jet-button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </x-jet-authentication-card>
-</x-guest-layout> --}}
-
-@section('main')
+<head>
+    <script src="{{ asset('assets/js/jquery3.2.1.min.js') }}"></script>
+    <script src="{{ asset('assets/bootstrap-4.1.3-dist/js/bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap-4.1.3-dist/css/bootstrap.min.css') }}" id="bootstrap-css">
+    <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
+    <!------ Include the above in your HEAD tag ---------->
     <style>
+        .body {
+            background: url("../../../assets/img/bg-sign-in-basic.jpeg") no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 100%;
+            min-height: 100vh;
+        }
+
         .is-invalid {
             border: 1px solid red;
         }
+
+        .register .nav-logos {
+            float: left;
+            margin-top: 3%;
+            margin-left: 5%;
+            width: 28%;
+        }
+
+        .account-radio {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+        }
     </style>
-    <!--Left Side (Desktop Only)-->
-    <div class="column is-6 is-hidden-mobile hero-banner">
-        <div class="hero is-fullheight is-login">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="left-caption">
-                        <h2>Join an Exciting Social Experience.</h2>
+</head>
+
+<body class="body">
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+            </div>
+            <div class="col-md-8 register-right">
+                <div class="nav-logos" id="logo" role="image-logo">
+                    <img src="/assets/img/logo/zhivago-logo.png" alt="logo" width="150" />
+                </div>
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Register</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Login</h3>
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
+                            <div class="row register-form">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input
+                                            class="form-control {{ Session::get('email_invalid') ? 'is-invalid' : '' }}"
+                                            type="email" name="email" :value="old('email')" required
+                                            placeholder="melina@example.com" />
+                                        @if (Session::has('email_invalid'))
+                                            <small style="color:red"> {{ Session::get('email_invalid') }}</small>
+                                        @endif
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            class="form-control {{ Session::get('password_invalid') ? ' is-invalid' : '' }}"
+                                            type="password" name="password" required autocomplete="current-password" />
+                                        @if (Session::has('password_invalid'))
+                                            <small style="color:red"> {{ Session::get('password_invalid') }}</small>
+                                        @endif
+                                    </div>
+                                    <input type="submit" class="btnRegister" value="Login" />
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h3 class="register-heading">Register</h3>
+                        <form method="POST" action="{{ route('register') }}">
+                            @csrf
+                            <div class="row register-form">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
+                                            type="text" name="name" :value="old('name')" required autofocus
+                                            autocomplete="name" placeholder="Enter UserName">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email"
+                                            class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
+                                            name="email" :value="old('email')" required autofocus
+                                            autocomplete="email" placeholder="Enter your email address">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password"
+                                            class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
+                                            type="password" name="password" required autocomplete="new-password"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    {{-- <div class="form-group">
+                                        <select class="{{ $errors->has('cardType') ? 'is-invalid' : '' }} form-control"
+                                            name="accountType" required value='{{ old('cardType') }}'
+                                            :value="old('email')">
+                                            <option value class="hidden" selected disabled>Choose account type</option>
+                                            <option value="talent"> Talent </option>
+                                            <option value="affiliate"> Affiliate </option>
+                                            <option value="vendor"> Vendor </option>
+                                            <option value="customer"> customer </option>
+                                        </select>
+                                        @error('cardType')
+                                            <small class="text-red text-center"> {{ $message }} </small>
+                                        @enderror
+                                    </div> --}}
+                                    <div class="form-group" style="display:flex; justify-content:center">
+                                        <div class="form-check account-radio">
+                                            <input class="form-check-input" type="radio" value="Talent"
+                                                id="TalentCheckbox" name="accountType">
+                                            <label class="form-check-label" for="TalentCheckbox">
+                                                Talent
+                                            </label>
+                                        </div>
+                                        <div class="form-check account-radio">
+                                            <input class="form-check-input" type="radio" value="Affiliate"
+                                                id="AffiliateCheckbox" name="accountType">
+                                            <label class="form-check-label" for="AffiliateCheckbox">
+                                                Affiliate
+                                            </label>
+                                        </div>
+                                        <div class="form-check account-radio">
+                                            <input class="form-check-input" type="radio" value="Vendor"
+                                                id="VendorCheckbox" name="accountType">
+                                            <label class="form-check-label" for="VendorCheckbox">
+                                                Vendor
+                                            </label>
+                                        </div>
+                                        <div class="form-check account-radio">
+                                            <input class="form-check-input" type="radio" value="Customer"
+                                                id="CustomerCheckbox" name="accountType">
+                                            <label class="form-check-label" for="CustomerCheckbox">
+                                                Customer
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="btnRegister" value="Register" />
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+</body>
 
-
-    @if (session('status'))
-        <div class="alert alert-success mb-3 rounded-0" role="alert">
-            {{ session('status') }}
-        </div>
-    @endif
-
-
-    <!--Right Side-->
-    <div class="column is-6">
-        <div class="hero form-hero is-fullheight">
-            <!--Logo-->
-            <div class="logo-wrap">
-                <div class="wrap-inner">
-                    <img src="assets/img/logo/Zhivago-white.svg" alt="">
-                </div>
-            </div>
-            <form method="POST" action="{{ route('login') }}">
-                @csrf
-                <!--Login Form-->
-                <div class="hero-body">
-                    <div class="form-wrapper">
-                        <!--Avatar-->
-                        <div class="avatar">
-                            <div class="badge">
-                                <i data-feather="check"></i>
-                            </div>
-                            <img src="assets/img/avatars/template.jpg" data-demo-src="assets/img/logo/Zhivago-white.svg"
-                                alt="avatar">
-                        </div>
-                        <!--Form-->
-                        <div class="login-form">
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input email-input {{ Session::get('email_invalid') ? 'is-invalid' : '' }}"
-                                        type="email" name="email" :value="old('email')" required
-                                        placeholder="melina@example.com" />
-                                    @if (Session::has('email_invalid'))
-                                        <small style="color:red"> {{ Session::get('email_invalid') }}</small>
-                                    @endif
-                                    <div class="input-icon">
-                                        <i data-feather="user"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <input
-                                        class="input password-input {{ Session::get('password_invalid') ? ' is-invalid' : '' }}"
-                                        type="password" name="password" required autocomplete="current-password" />
-                                    @if (Session::has('password_invalid'))
-                                        <small style="color:red"> {{ Session::get('password_invalid') }}</small>
-                                    @endif
-                                    <div class="input-icon">
-                                        <i data-feather="lock"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="custom-control custom-checkbox">
-                                    <x-jet-checkbox id="remember_me" name="remember" />
-                                    <label class="custom-control-label" for="remember_me">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <button type="submit"
-                                        class="button is-solid primary-button raised is-rounded is-fullwidth"> Login
-                                    </button>
-                                    <!--<button class="button is-solid primary-button raised is-rounded is-fullwidth">Login</button>-->
-                                </div>
-                                <div class="has-text-centered">
-                                    <a href="{{ route('register') }}">Don't have an account? Create Account </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section forgot-password">
-                            <div class="has-text-centered">
-                                <a href="{{ route('password.request') }}">Forgot password?</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-@endsection
+</html>
